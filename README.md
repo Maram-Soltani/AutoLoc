@@ -1,5 +1,4 @@
 # AutoLoc
-# AutoLoc
 
 ## Présentation
 

@@ -1,5 +1,6 @@
 package org.example.autoloc.entities;
-
+import java.util.List;
+import java.util.ArrayList;
 import jakarta.persistence.*;
 import jakarta.persistence.Entity;
 import lombok.AllArgsConstructor;
@@ -25,4 +26,7 @@ public class Client {
     String Telephone;
     String numPermis;
     LocalDate dateIinscription;
+
+    @OneToMany(mappedBy = "client")
+    private List<Reservation> reservations = new ArrayList<>();
 }

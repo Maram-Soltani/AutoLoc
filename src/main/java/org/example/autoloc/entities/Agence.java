@@ -1,5 +1,6 @@
 package org.example.autoloc.entities;
-
+import java.util.List;
+import java.util.ArrayList;
 import jakarta.persistence.*;
 import jakarta.persistence.Entity;
 import lombok.AllArgsConstructor;
@@ -21,4 +22,9 @@ public class Agence {
     String Ville;
     String adresse;
     String Telephone;
+    @OneToMany(mappedBy = "agence")
+    private List<Employe> employes = new ArrayList<>();
+
+    @OneToMany(mappedBy = "agence")
+    private List<Vehicule> vehicules = new ArrayList<>();
 }

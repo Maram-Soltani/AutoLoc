@@ -6,7 +6,8 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
+import java.util.List;
+import java.util.ArrayList;
 @Entity
 @Getter
 @Setter
@@ -17,4 +18,7 @@ public class Equipement {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long idEquipement;
     String libelle;
+
+    @ManyToMany(mappedBy = "equipements")
+    private List<Vehicule> vehicules = new ArrayList<>();
 }

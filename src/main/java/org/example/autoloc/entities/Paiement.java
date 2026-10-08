@@ -23,4 +23,8 @@ public class Paiement {
     BigDecimal montant;
     LocalDate datePaiement;
     ModePaiement modePaiement;
+
+    @ManyToOne
+    @JoinColumn(name = "contrat_id")
+    private Contrat contrat;
 }

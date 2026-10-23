@@ -1,5 +1,6 @@
 package org.example.autoloc.services;
 
+import lombok.AllArgsConstructor;
 import org.example.autoloc.entities.Employe;
 import org.example.autoloc.repositories.EmployeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,6 +9,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
+@AllArgsConstructor
 public class IEmployeServiceImp implements IEmployeService {
 
     @Autowired

@@ -12,7 +12,7 @@ import java.util.List;
 @AllArgsConstructor
 public class IPaiementServiceImp implements IPaiementService {
 
-    @Autowired
+    /*@Autowired*/
     private PaiementRepository paiementRepository;
 
     @Override

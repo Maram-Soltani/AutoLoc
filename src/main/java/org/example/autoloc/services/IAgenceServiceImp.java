@@ -12,7 +12,7 @@ import java.util.List;
 @AllArgsConstructor
 public class IAgenceServiceImp implements IAgenceService {
 
-    @Autowired
+   /* @Autowired*/
     private AgenceRepository agenceRepository;
 
     @Override

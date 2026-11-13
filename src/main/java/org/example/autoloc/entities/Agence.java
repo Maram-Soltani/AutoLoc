@@ -19,9 +19,9 @@ public class Agence {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long idAgence;
     String nom;
-    String Ville;
     String adresse;
-    String Telephone;
+    private String ville;
+    private Long telephone;
     @OneToMany(mappedBy = "agence")
     private List<Employe> employes = new ArrayList<>();
 
